@@ -22,5 +22,5 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("home",views.home,name='home'),
     path("create/",views.createShortURL,name='create'),
-    path("<str:url>",views.redirect,name='redirect'),
+    path("<str:url>/",views.redirect,name='redirect'),
 ]
